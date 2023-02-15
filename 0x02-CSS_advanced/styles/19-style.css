@@ -1,4 +1,4 @@
-/* Universal box-sizing rule */
+/* Grid styling and custom variables */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -390,20 +390,20 @@
     --line-height-big: 1.8;
   
     --section-header-align: center;
+    --section-footer-align: center;
   
     --section-tagline-transform: uppercase;
   
     --section-title-margin: 0;
+    --section-tagline-margin: 0;
     --section-title-color: var(--color-black);
-
+  
     --section-padding: 5rem 0;
     --section-header-padding: 0 0 3rem;
     --section-body-padding: 0 0 3rem;
     --section-footer-padding: 3rem 0 0;
-    --section-footer-align: center;
     --footer-padding: 5rem 0 1rem;
-
-    
+  
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
@@ -455,7 +455,7 @@
   .card-category {
     color: var(--color-primary);
   }
-
+  
   .section {
     padding: var(--section-padding);
   }
@@ -464,11 +464,11 @@
     text-align: var(--section-header-align);
     padding: var(--section-header-padding);
   }
-
+  
   .section-body {
     padding: var(--section-body-padding);
   }
-
+  
   .section-footer {
     padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
@@ -487,22 +487,23 @@
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
+    margin: var(--section-tagline-margin);
   }
-
+  
   .container {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
   }
-
+  
   .footer {
     padding: var(--footer-padding);
   }
-
+  
   .navbar-menu {
     float: right;
   }
-
+  
   .nav {
     margin: 0;
     padding: 0;
@@ -527,9 +528,8 @@
   .nav .nav-link:hover {
     color: var(--nav-item-link-hover);
   }
-
   
-ul.row {
+  ul.row {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -556,4 +556,3 @@ ul.row {
   .footer ul {
     text-align: right;
   }
-
